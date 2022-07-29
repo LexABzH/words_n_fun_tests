@@ -47,16 +47,21 @@ setup(
     },
     include_package_data=True,
     install_requires=[
-        'pandas==1.3.5',
-        'numpy==1.19.5',
-        'nltk>=3.4.5,<3.6',
-        'tqdm==4.62.2',  # https://github.com/tqdm/tqdm/issues/780
+        'pandas>=1.3.5,<1.5',
+        'numpy>=1.19.5,<1.24',
+        'nltk>=3.4.5,<3.7',
+        'tqdm>=4.62.2,<5.',  # https://github.com/tqdm/tqdm/issues/780
         'simplejson>=3.17.0,<3.17.3',
-        'requests>=2.23.0,<2.25.1',
-        'ftfy>=5.8,<6.0',
+        'requests>=2.23.0,<3.',
+        'ftfy>=5.8,<6.',
     ],
     extras_require={
-        "lemmatizer": ["spacy==3.3.1", "markupsafe==2.0.1", "Cython==0.29.24", "fr-core-news-sm==3.3.0"]
+        "lemmatizer": [
+            "spacy==3.3.1",
+            "markupsafe>=2.0.1,<2.2",
+            "Cython>=0.29.24,<1.",
+            "fr-core-news-sm==3.3.0"
+        ]
     }
     # pip install words_n_fun || pip install words_n_fun[lemmatizer]
 )

@@ -48,7 +48,7 @@ setup(
     include_package_data=True,
     install_requires=[
         'pandas>=1.3.5,<1.5',
-        'numpy>=1.19.5,<1.24',
+        'numpy>=1.19.5,<1.22',
         'nltk>=3.4.5,<3.7',
         'tqdm>=4.62.2,<5.',  # https://github.com/tqdm/tqdm/issues/780
         'simplejson>=3.17.0,<3.17.3',
